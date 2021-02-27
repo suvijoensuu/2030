@@ -2,12 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Bitcoin from './Bitcoin';
+import InTheHome from './InTheHome';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Switch>
+      <Route exact path="/" component={App}/>
+      <Route exact path="/bitcoin" component={Bitcoin}/>
+      <Route exact path="/koalabear" component={InTheHome}/>
+    </Switch>
+  </Router>,
   document.getElementById('root')
 );
 

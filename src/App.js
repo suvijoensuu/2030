@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import earthrise from './earthrise_apollo8.jpg';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         >
           By 2030
         </a>
+        <Link to="/bitcoin">Look at Bitcoin Page</Link>
+        <Link to="/koalabear">Look at What you can do at Home Page</Link>
       </header>
     </div>
   );
