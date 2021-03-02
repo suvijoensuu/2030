@@ -1,14 +1,13 @@
-import logo from './logo.svg';
+import logo from './images/logo.svg';
 import './App.css';
-import earthrise from './earthrise_apollo8.jpg';
+import earthrise_bkg from './images/earthrise_apollo8_bkgd.jpg';
 import { Link } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <img src={earthrise} className="App-logo" alt="logo" />
+      <header className="App-header" >
+        {/*<img src={logo} className="App-logo" alt="logo" /> */}
         <p>
           Earthrise
         </p>
@@ -18,11 +17,17 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          By 2030
         </a>
-        <Link to="/bitcoin">Look at Bitcoin Page</Link>
-        <Link to="/koalabear">Look at What you can do at Home Page</Link>
+        {/*<Link to="/bitcoin">Look at Bitcoin Page</Link> */}
+        {/*<Link to="/koalabear">At Home</Link> */}
+        <ul className="Menu">
+          <li><a className="Menulinks" href="/about">About</a></li>
+          <li><a className="Menulinks" href="https://earthshotprize.org/">Earthshot Prize</a></li>
+          <li><a className="Menulinks" href="/bitcoin">Inspiration</a></li>
+          <li><a className="Menulinks" href="/koalabear">Action</a></li>
+        </ul>
       </header>
+
     </div>
   );
 }

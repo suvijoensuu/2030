@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-image: url(./images/earthrise_apollo8_bkgd.jpg);
+  background-size: cover;
 }
 
 .App-logo {
@@ -14,7 +16,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +26,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +36,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Menu {
+  list-style-type: none;
+  background-color: #F4F1C9;
+  font-family: fantasy;
+  color: green;
+  font-weight: bold;
+  margin: 0;
+  padding: 5;
+  position: fixed;
+  right: 5%;
+  top: 5%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+
+}
+
+a.Menulinks:visited {
+  color: green;
 }

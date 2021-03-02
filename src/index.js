@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Bitcoin from './Bitcoin';
+import About from './About';
 import InTheHome from './InTheHome';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 
 ReactDOM.render(
   <Router>
@@ -13,6 +15,7 @@ ReactDOM.render(
       <Route exact path="/" component={App}/>
       <Route exact path="/bitcoin" component={Bitcoin}/>
       <Route exact path="/koalabear" component={InTheHome}/>
+      <Route exact path="/about" component={About}/>
     </Switch>
   </Router>,
   document.getElementById('root')
